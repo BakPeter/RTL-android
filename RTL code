@@ -1,0 +1,14 @@
+public interface RTLInterface {
+    void setRTL();
+}
+
+//implementation 
+class <class_name> implements RTLInterface {
+  ...
+  
+  
+    @Override
+    public void setRTL() {
+        getWindow().getDecorView().setLayoutDirection(View.LAYOUT_DIRECTION_LTR);
+    }
+}
